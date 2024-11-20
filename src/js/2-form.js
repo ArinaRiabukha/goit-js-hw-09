@@ -34,8 +34,11 @@ function processInput(event) {
       alert("Fill please all fields");
       return;
     }
-  
-    console.log(formData);
+
+    console.log({
+        email: formData.email.trim(),
+        message: formData.message.trim()
+    });
 
     form.reset();
     formData = { email: "", message: "" };
