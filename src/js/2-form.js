@@ -39,8 +39,9 @@ function processInput(event) {
 
     form.reset();
     formData = { email: "", message: "" };
-    localStorage.removeItem(storageKey);
   }
 
 form.addEventListener("input", processInput);
 form.addEventListener("submit", processSubmit);
+
+loadFromLocalStorage();
